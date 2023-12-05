@@ -1,12 +1,14 @@
 mod day1;
 mod file_reader;
 mod day2;
+mod day3;
 
-const MAX_DAYS : usize = 2;
+const MAX_DAYS : usize = 3;
 fn main() {
     let solutions: [fn(); MAX_DAYS] = [
         day1::solve1,
-        day2::solve
+        day2::solve,
+        day3::solve
     ];
 
     let args: Vec<String> = std::env::args().collect();
