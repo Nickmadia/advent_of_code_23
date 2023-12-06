@@ -46,7 +46,6 @@ pub fn solve() {
                 
                 if num.valid {
                     sum += num.number;
-                    println!("{} : {}",num.number, sum);
                 } 
                 num.number = 0;
                 num.valid = false;
@@ -54,7 +53,7 @@ pub fn solve() {
         }
     }
 
-    println!("The sum of all part numbers in the engine schematic is: {}", sum);
+    println!("Result: {}", sum);
 }
 fn is_symbol(c: char) -> bool {
    !c.is_digit(10) && c != '.' || c =='*'
