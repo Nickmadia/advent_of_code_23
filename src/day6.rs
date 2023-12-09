@@ -20,7 +20,7 @@ pub fn solve() {
         let time = vals[0][i].parse::<i32>().expect("parse error time");
         let dist = vals[1][i].parse::<i32>().expect("parse error dist");
         let w =  get_w_number(time, dist);
-        if w >0 {
+        if w > 0 {
             m_wins = m_wins * w;
         }
     } 
