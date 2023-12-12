@@ -1,17 +1,12 @@
 use std::collections::HashMap;
-use std::io::{self, BufRead};
-
 use crate::file_reader;
 
 pub fn solve() {
-    // Crea un nuovo HashMap per memorizzare i valori
     let mut dictionary: HashMap<String, (String, String)> = HashMap::new();
 
-    // Esempio di input da un BufReader (puoi sostituire questo con il tuo BufReader effettivo)
     let input_lines = file_reader::get_file_v_str("input/8.txt");
     
     let directions:Vec<char> = input_lines[0].chars().collect();
-    // Simula la lettura delle linee dal BufReader
     for line in &input_lines[1..] {
         let parts: Vec<&str> = line.split('=').map(|s| s.trim()).collect();
 

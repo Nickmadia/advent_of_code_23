@@ -7,8 +7,9 @@ mod day5;
 mod day6;
 mod day7;
 mod day8;
+mod day9;
 
-const MAX_DAYS : usize = 8;
+const MAX_DAYS : usize = 9;
 fn main() {
     let solutions: [fn(); MAX_DAYS] = [
         day1::solve1,
@@ -18,7 +19,8 @@ fn main() {
         day5::solve,
         day6::solve,
         day7::solve,
-        day8::solve
+        day8::solve,
+        day9::solve
     ];
 
     let args: Vec<String> = std::env::args().collect();
